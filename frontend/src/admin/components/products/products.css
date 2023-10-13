@@ -1,0 +1,15 @@
+.Products {}
+
+  
+  .responsive-table .p-datatable-thead > tr > th {
+    white-space: nowrap!important;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .responsive-table .p-datatable-tbody > tr > td {
+      display: block!important;
+      width: 100%!important;
+    }
+  }
+  
+  

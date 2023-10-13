@@ -1,0 +1,104 @@
+.Home {}
+.info-2{
+    background: url('../../../public/images/Bun.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.info-1{
+    background: url('../../../public/images/Veg.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+  
+.card-product:hover {
+    border: 1px solid #0051a9;
+    box-shadow: 0 5px 12px rgba(0,0,0,.12);
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s
+}
+.card-product .card-product-action {
+    bottom: 15%;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9;
+}
+.card-product .btn-action {
+    align-items: center;
+    background-color: #0aad0a;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px -1px rgba(145,158,171,.2), 0 4px 5px 0 rgba(145,158,171,.14), 0 1px 10px 0 rgba(145,158,171,.12);
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 14px;
+    height: 34px;
+    justify-content: center;
+    line-height: 34px;
+    text-align: center;
+    transition: all .3s ease 0s;
+    vertical-align: middle;
+    width: 34px;
+}
+.card-product:hover .card-hidden, .card-product:hover .card-product-action {
+    opacity: 1;
+    visibility: visible;
+}
+.card-product .card-product-action {
+    bottom: 15%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s ease 0s;
+    width: 100%;
+    z-index: 0;
+}
+.text-inherit {
+    color: #21313c;
+}
+.bg-danger {
+   opacity: 1;
+    background-color: #db3030!important;
+}
+.slick-slide {
+    padding-right: 10px!important;
+  }
+  
+  /* Home.css */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    cursor: pointer;
+
+   
+  }
+
+  .slick-prev:before, .slick-next:before {
+ 
+    color: rgb(28, 60, 150);
+
+}
+
+
+.slider-image {
+    height: 120px; /* Set the desired fixed height here */
+    object-fit: cover; /* This ensures that the image covers the entire height while preserving its aspect ratio */
+  }
+  .carousel-content{
+    top:20%;
+  }
+  .img-banner{
+    background-image: url('../../../public/images/slide-1.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden!important;
+  }

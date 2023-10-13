@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  # If an existing asset or directory is requested go to it as it is
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+  RewriteRule ^ - [L]
+  # If the requested resource doesn't exist, use index.html
+  RewriteRule ^ /index.html
+  ErrorDocument 404   http://18.142.52.69:9347/errordocs/under-maintenance.html
+  ErrorDocument 403  http://18.142.52.69:9347/errordocs/under-maintenance.html
+  ErrorDocument 500  http://18.142.52.69:9347/errordocs/under-maintenance.html
+  
+  </IfModule>

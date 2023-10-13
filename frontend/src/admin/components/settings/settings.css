@@ -1,0 +1,21 @@
+.Settings {}
+
+
+.Settings .nav.menu-tabs .nav-link {
+
+    outline: none;
+
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000000;
+    background: #fff;
+    border: 1px solid #3d5ee1;
+}
+
+.Settings .nav.menu-tabs .nav-link.active {
+    color: #fff;
+    background: #3d5ee1;
+}

@@ -1,0 +1,23 @@
+.Header {
+    box-shadow: 0 2px 4px #0003;
+    background-color: var(--header-color);
+}
+.header .nav-item .nav-link,.header .navbar .navbar-brand,.header .nav-item .nav-link.active{
+
+}
+.form-control.search-input:focus {
+       box-shadow: none;
+  }
+
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 500px) !important;
+}
+.offcanvas-size-xxl {
+    --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+.offcanvas-size-md { /* add Responsivenes to default offcanvas */
+    --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+.offcanvas-size-sm {
+    --bs-offcanvas-width: min(95vw, 250px) !important;
+}
